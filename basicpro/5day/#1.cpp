@@ -23,11 +23,11 @@ bool verify(int val) {
 
 int main() {
     ios::sync_with_stdio(false);
-    cin.tie(NULL);
+    std::cin.tie(NULL);
     int T;
-    cin >> T;
+    std::cin >> T;
     for(int tc = 1; tc <= T; tc++) {
-        cin >> N >> K;
+        std::cin >> N >> K;
         for(int n = 0; n < N; n++) cin >> W[n];
         for(int k = 0; k < K; k++) cin >> S[k];
         
@@ -37,7 +37,7 @@ int main() {
             if(verify(m)) r = m;
             else l = m + 1;
         }
-        cout << &apos;#&apos; << tc << &apos; &apos; << r << &apos;\n&apos;;
+        std::cout << '#' << tc << ' ' << r << '\n';
     }
     return 0;
 }
